@@ -1,0 +1,20 @@
+<h1>Welcome to my Travel Site</h1>
+<p>This is my awesome travel site.</p>
+
+<p>I am from the <%= @homeland %>.</p>
+<h2>These are a few of the countries I'd like to visit:</h2>
+
+<ul>
+	<% @countries.each do |country| %>
+  	<li><%= country %></li>
+	<% end %>
+</ul>
+	
+
+	<p><%= image_tag "Argentina_waterfalls.jpg", alt: "Argentina Waterfalls", id: "Argentina", class: "img-responsive" %></p>
+<p><%= image_tag "Lake-Titicaca-Bolivia.jpg", alt: "Lake Titicaca in Bolivia", id: "Bolivia", class: "img-responsive" %></p>
+<p><%= image_tag "chile-moai-statues.jpg", alt: "Chile Moai Statues", id: "Chile", class: "img-responsive" %></p>
+<p><%= image_tag "cuba-CARS0116.jpg", alt: "Havana, Cuba", id: "Cuba", class: "img-responsive" %></p>
+<p><%= image_tag "Tikal_Guatemala.jpg", alt: "Myan Ruins at Tikal, Guatemala", id: "Guatemala", class: "img-responsive" %></p>
+
+
